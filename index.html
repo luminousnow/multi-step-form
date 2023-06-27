@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/1254dc28fb.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="/">
+        <div class="form__tab step type">
+          <input type="checkbox" name="type-1" id="type-1" />
+          <img src="https://picsum.photos/80/80" alt="" />
+          <input type="checkbox" name="type-2" id="type-2" />
+          <img src="https://picsum.photos/id/21/80/80" alt="" />
+        </div>
+
+        <div class="form__tab step dimension">
+          <input type="checkbox" name="dimension-1" id="dimension-1" />
+          <img src="https://picsum.photos/80/80" alt="" />
+
+          <input type="checkbox" name="dimension-2" id="dimension-2" />
+          <img src="https://picsum.photos/80/80" alt="" />
+
+          <input type="checkbox" name="custom-range" id="custom-range" />
+          <img src="https://picsum.photos/80/80" alt="" />
+        </div>
+
+        <div class="form__tab step contact">
+          <div class="contact__container">
+            <input
+              class="contact__input"
+              type="text"
+              id="name"
+              name="name"
+              autocomplete="on"
+              placeholder=" "
+            />
+            <label for="name">Name</label>
+          </div>
+          <div class="contact__container">
+            <input
+              class="contact__input"
+              type="tel"
+              id="phone"
+              name="phone"
+              autocomplete="on"
+              placeholder=" "
+            />
+            <label for="phone">Your phone number</label>
+          </div>
+          <div class="contact__container">
+            <input type="checkbox" name="callback" id="callback" />
+            <i class="fa-sharp fa-solid fa-phone"></i>
+
+            <input type="checkbox" name="viber" id="viber" />
+            <i class="fa-brands fa-viber"></i>
+
+            <input type="checkbox" name="telegram" id="telegram" />
+            <i class="fa-brands fa-telegram"></i>
+
+            <input type="checkbox" name="whatsapp" id="whatsapp" />
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+        </div>
+        <div class="form__navigation">
+          <button class="form__button previous">Go back</button>
+          <button class="form__button next">Next</button>
+          <button class="form__button submit" type="submit">Send</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
